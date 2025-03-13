@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import SideNav from "./SideNav";
 
 const Layout = ({ children }) => {
   return (
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
         backgroundColor: "#0a192f",
       }}
     >
-      {/* We will add the SideNav in a later step */}
+      <SideNav />
       <View style={{ flex: 1, padding: 20 }}>{children}</View>
     </View>
   );
