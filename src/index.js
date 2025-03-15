@@ -1,10 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
-import { AppRegistry } from "react-native";
 
-AppRegistry.registerComponent("App", () => App);
-AppRegistry.runApplication("App", {
-  initialProps: {},
-  rootTag: document.getElementById("root"),
-});
+console.log("Index.js is running"); // Debug log
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
