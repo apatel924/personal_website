@@ -1,16 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
-import Layout from "./components/Layout";
 
 const App = () => {
+  console.log("App is rendering"); // <--- Debug log
   return (
-    <Layout>
-      <View>
-        <Text style={{ color: "#64ffda", fontSize: 24 }}>
-          Welcome to my personal website!
-        </Text>
-      </View>
-    </Layout>
+    <View style={{ backgroundColor: "red", flex: 1 }}>
+      <Text style={{ color: "white", fontSize: 24 }}>Hello from App</Text>
+    </View>
   );
 };
 
